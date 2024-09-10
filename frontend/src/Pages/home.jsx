@@ -1,6 +1,6 @@
-import Card from "../Components/Card"
-import { redirect, useNavigate } from "react-router-dom";
-import { Briefcase, Calendar, Github, Twitter,Linkedin  } from "lucide-react"
+import logo from '../assets/dg__2_-removebg-preview.png'
+import { useNavigate } from "react-router-dom";
+import { Briefcase, Calendar, Github, Twitter, Linkedin, Contact } from "lucide-react"
 
 function Home() {
     const navigate = useNavigate();
@@ -9,28 +9,40 @@ function Home() {
         <>
             <div className="flex flex-col min-h-screen">
                 <header className="flex items-center justify-between p-4 bg-gray-100">
-                    <div className="text-2xl font-bold text-gray-800">DevConnect</div>
+                    <div className="flex items-center space-x-4">
+                        <div>
+                            <img src={logo} alt="Logo" className="h-10 w-10" />
+                        </div>
+                        <div className="text-2xl font-bold text-gray-800">DevoGigs</div>
+                    </div>
                     <nav className="flex space-x-4">
                         <button onClick={() => { navigate('/job') }}
 
                             className="flex items-center text-gray-600 hover:text-gray-800 transition-colors"
                         >
                             <Briefcase className="w-4 h-4 mr-1" />
-                            Job Opportunities
+                            Jobs
                         </button>
                         <button
                             onClick={() => { navigate('/event') }}
                             className="flex items-center text-gray-600 hover:text-gray-800 transition-colors"
                         >
                             <Calendar className="w-4 h-4 mr-1" />
-                            Tech Events
+                            Events
+                        </button>
+                        <button
+                            onClick={() => { navigate('/contact') }}
+                            className="flex items-center text-gray-600 hover:text-gray-800 transition-colors"
+                        >
+                            <Contact className="w-4 h-4 mr-1" />
+                            Contacts
                         </button>
                     </nav>
                 </header>
 
                 <main className="flex-grow">
                     <section className="container mx-auto px-4 py-16 text-center">
-                        <h1 className="text-4xl font-bold text-gray-900 mb-4">Welcome to DevConnect</h1>
+                        <h1 className="text-4xl font-bold text-gray-900 mb-4">Welcome to DevoGigs</h1>
                         <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
                             A thriving community of developers, fostering collaboration, learning, and growth in the world of technology.
                         </p>
@@ -55,7 +67,7 @@ function Home() {
                     <div className="container mx-auto px-4">
                         <div className="flex justify-center space-x-6">
                             <button
-                                 onClick={() => { window.location.href = 'https://discord.com/invite/axf2Qwv3' }}
+                                onClick={() => { window.location.href = 'https://discord.com/invite/axf2Qwv3' }}
                                 className="text-gray-600 hover:text-gray-800 transition-colors">
                                 <span className="sr-only">Discord</span>
                                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -63,10 +75,10 @@ function Home() {
                                 </svg>
                             </button>
                             <button
-                                onClick={() => { window.location.href = 'https://x.com/devogigs' }}
+                                onClick={() => { window.location.href = 'https://www.linkedin.com/company/devogig' }}
                                 className="text-gray-600 hover:text-gray-800 transition-colors">
                                 <span className="sr-only">Linkedin</span>
-                                <Linkedin  className="h-6 w-6" />
+                                <Linkedin className="h-6 w-6" />
                             </button>
                             <button
                                 onClick={() => { window.location.href = 'https://x.com/devogigs' }}
@@ -82,7 +94,7 @@ function Home() {
                             </button>
                         </div>
                         <p className="mt-8 text-center text-gray-500 text-sm">
-                            Â© {new Date().getFullYear()} DevConnect. All rights reserved.
+                            © {new Date().getFullYear()} DevConnect. All rights reserved.
                         </p>
                     </div>
                 </footer>
