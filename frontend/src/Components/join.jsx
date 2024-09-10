@@ -11,29 +11,66 @@ export function CardWithForm() {
       <div>
         <form>
           <div className="grid w-full gap-4">
+
             <div className="flex flex-col space-y-1.5">
-              <label htmlFor="name" className="text-sm font-semibold">Name</label>
+              <label htmlFor="name" className="text-sm font-semibold">First Name</label>
               <input
                 id="name"
-                placeholder="ENTER FULL NAME"
+                type='text'
+                placeholder="ENTER First NAME"
                 className="border border-gray-300 rounded-lg p-2"
               />
             </div>
+
             <div className="flex flex-col space-y-1.5">
-              <label htmlFor="framework" className="text-sm font-semibold">Framework</label>
+              <label htmlFor="surname" className="text-sm font-semibold">Last Name</label>
+              <input
+                id="surname"
+                type='text'
+                placeholder="ENTER Last NAME"
+                className="border border-gray-300 rounded-lg p-2"
+              />
+              </div>
+
+              <div className="flex flex-col space-y-1.5">
+              <label htmlFor="email" className="text-sm font-semibold">E-mail</label>
+              <input
+                id="email"
+                type='email'
+                placeholder="ENTER EMAIL"
+                className="border border-gray-300 rounded-lg p-2"
+
+                required/>
+              </div>
+
+              <div className="flex flex-col space-y-1.5">
+              <label htmlFor="collgename" className="text-sm font-semibold">College/Universtity Name</label>
+              <input
+                id="collgename"
+                type='text'
+                placeholder="ENTER College name"
+                className="border border-gray-300 rounded-lg p-2"
+              />
+              </div>
+
+            
+            <div className="flex flex-col space-y-1.5">
+              <label htmlFor="Year" className="text-sm font-semibold">Current Year of University/College</label>
               <div className="relative">
                 <select
-                  id="framework"
+                  id="Year"
                   className="border border-gray-300 rounded-lg p-2 w-full"
                 >
-                  <option value="" disabled>Select</option>
-                  <option value="next">Next.js</option>
-                  <option value="sveltekit">SvelteKit</option>
-                  <option value="astro">Astro</option>
-                  <option value="nuxt">Nuxt.js</option>
+                  <option value='1' >1</option>
+                  <option value='2'>2</option>
+                  <option value='3'>3</option>
+                  <option value='4'>4</option>
+                  
                 </select>
               </div>
             </div>
+
+
           </div>
         </form>
       </div>
@@ -42,7 +79,7 @@ export function CardWithForm() {
           Cancel
         </button>
         <button className="bg-blue-500 text-white rounded-lg px-4 py-2 hover:bg-blue-600">
-          Deploy
+          Submit
         </button>
       </div>
     </div>
