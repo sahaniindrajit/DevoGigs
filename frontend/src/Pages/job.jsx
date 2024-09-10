@@ -1,11 +1,8 @@
 
-function Job() {
-    return (
-        <>
-            <div className="flex flex-col min-h-screen">
-               "HI HELLO " 
-            </div>
-        </>
-    );
+import Job from "../Components/Jobs";
+
+export default function Jobs(){
+    return(
+        <Job/>
+    )
 }
-export default Job

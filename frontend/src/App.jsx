@@ -1,10 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/home.jsx'
-import Job from './Pages/job.jsx'
+
 import Join from './Pages/login.jsx'
 import About from './Pages/about.jsx'
 import { Contact } from 'lucide-react'
 import Event from './Pages/event.jsx'
+import Jobs from './Pages/job.jsx'
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/job' element={<Job/>} />
+        <Route path='/job' element={<Jobs/>} />
         <Route path='/event' element={<Event/>} />
         <Route path='/join' element={<Join/>} />
         <Route path='/about' element={<About/>} />
