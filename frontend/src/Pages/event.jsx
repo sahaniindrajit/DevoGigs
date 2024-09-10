@@ -6,7 +6,7 @@ import Card from '../Components/Card';
 const events = [
   {
     // {imageUrl: 'https://via.placeholder.com/400x300?text=Tech+Conference',}
-    imageUrl: 'https://techindetail.com/wp-content/uploads/2023/02/top.jpg',
+    imageUrl: 'https://techindetail.com/wp-content/uploads/2023/02/top.jpg' ,
     description: 'Join us for an exciting tech conference where industry leaders share their insights and future trends in technology.',
     linkUrl: 'https://techconference.com',
     linkText: 'Learn More'
