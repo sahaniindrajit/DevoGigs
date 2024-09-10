@@ -19,7 +19,7 @@ function Home() {
                             Job Opportunities
                         </button>
                         <button
-                            to="/events"
+                            onClick={() => { navigate('/event') }}
                             className="flex items-center text-gray-600 hover:text-gray-800 transition-colors"
                         >
                             <Calendar className="w-4 h-4 mr-1" />
