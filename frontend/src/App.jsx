@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import Home from './Pages/home.jsx'
 import Jobs from './Pages/job.jsx'
 import Join from './Pages/login.jsx'
 import About from './Pages/about.jsx'
 import Contact from './Pages/contact.jsx'
 import Event from './Pages/event.jsx'
-import Home from './pages/home.jsx'
+
 
 
 
